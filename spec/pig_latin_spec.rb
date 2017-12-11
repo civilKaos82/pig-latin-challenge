@@ -9,9 +9,8 @@ describe 'Converting single words to Pig Latin' do
       let(:word) {"aaron"}
 
       it 'Returns the original string if the word starts with a vowel.' do
-        expect(pig_latin_word(word)).to eq 'Aaron'
+        expect(pig_latin_word(word)).to eq 'aaron'
       end
-
     end
 
     describe 'When the word starts with a consonant' do
@@ -27,9 +26,7 @@ describe 'Converting single words to Pig Latin' do
         new_string = pig_latin_word(word)
         expect(new_string[-3..-1]).to eq 'ay.'
       end
-
     end
-
   end
 end
 
