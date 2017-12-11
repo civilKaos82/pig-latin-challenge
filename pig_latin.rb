@@ -5,7 +5,12 @@ def pig_latin_word(string)
   elsif !vowel_test
     array = string.chars.rotate!
     output_string = array.join('')
-    output_string << "ay."
+    output_string << "ay"
   end
   output_string
+end
+
+def pig_latin_sentence(string)
+  string_array = string.split(' ')
+  output_string = string_array.map { |word| pig_latin_word(word) }.join(' ')
 end

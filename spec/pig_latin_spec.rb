@@ -19,16 +19,26 @@ describe 'Converting single words to Pig Latin' do
 
       it 'Moves the leading consonants to the end of the word.' do
         new_string = pig_latin_word(word)
-        expect(new_string[-4]).to eq 'b'
+        expect(new_string[-3]).to eq 'b'
       end
 
-      it 'Adds the sufix "ay." to the end of the word.' do
+      it 'Adds the sufix "ay" to the end of the word.' do
         new_string = pig_latin_word(word)
-        expect(new_string[-3..-1]).to eq 'ay.'
+        expect(new_string[-2..-1]).to eq 'ay'
       end
     end
   end
 end
 
 describe 'Converting a sentence to Pig Latin' do
+
+  describe 'pig_latin_sentence' do
+
+    let(:sentence) { "this is the sentence" }
+
+    it 'Runs #pig_latin_word to convert each word in the sentence' do
+      expect(pig_latin_sentence(sentence)).to eq 'histay is hetay entencesay'
+    end
+
+  end
 end
