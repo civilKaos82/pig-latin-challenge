@@ -1,1 +1,3 @@
-# Your code here
+def pig_latin_word(string)
+
+end
