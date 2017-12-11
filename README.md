@@ -1,6 +1,7 @@
 # Pig Latin
 
 ## Summary
+
 In this challenge, we're going to practice building to a specification—in this case a description of the rules of *pig latin*, a sort of secret language based on English words.  Not everyone speaks the same dialect of pig latin; in other words, the rules for converting a word from English to pig latin can differ.  Our rules might be different from someone else's rules.  In this challenge, we're presented with a description of pig latin that needs to be implemented in code.  Regardless of our personal rules for pig latin, we need to implement the rules described.
 
 
@@ -16,7 +17,7 @@ As programmers, we are expected to build code from various sources: [user storie
 In this process, we need to understand the value of each specification medium. Pseudocode, for example, is primarily used to communicate the essence of an algorithm without getting bogged down in language-specific syntax. A good programmer can take well-written pseudocode and translate it into code in whatever language.
 
 
-##Releases
+## Releases
 
 ### Release 0: Convert One Word
 
